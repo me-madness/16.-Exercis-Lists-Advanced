@@ -1,3 +1,5 @@
+# First way from the Lector
+
 numbers = [int(number) for number in input().split()]
 current_group = 10
 while numbers:
@@ -5,3 +7,5 @@ while numbers:
     print(f"Group of {current_group}'s: {filtered_numbers_for_current_group}")
     current_group +=10
     numbers = [number for number in numbers if number not in filtered_numbers_for_current_group]
+    
+# Second way from me    
