@@ -1,6 +1,6 @@
 # First way from the Lector
 
-numbers = [int(number) for number in input().split()]
+numbers = [int(number) for number in input().split(", ")]
 current_group = 10
 while numbers:
     filtered_numbers_for_current_group = [number for number in numbers if number <= current_group]
