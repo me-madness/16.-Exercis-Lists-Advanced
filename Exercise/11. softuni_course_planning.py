@@ -8,9 +8,9 @@ list_with_exercise = input().split()
 command = input().split()
 while command != "course start":
     if command[0] == "Add":
-        pass
+        list_with_exercise.pop(command[1])
     elif command[0] == "Insert":
-        pass
+        
     elif command[0] == "Remove":
         pass
     elif command[0] == "Swap":
@@ -18,4 +18,4 @@ while command != "course start":
     elif command[0] == "IExercise":
         pass    
     
-print(f"{lesson index}.{lessonTitle}")    
+print(f"{lesson_index}.{lessonTitle}")    
