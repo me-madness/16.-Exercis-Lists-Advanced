@@ -5,10 +5,12 @@
 # Second way from me 
 
 list_with_exercise = input().split(", ")
-command = input().split(":")
 
-while command != "course start":
-    if command[0] == "Add":
+while True:
+    command = input().split(":")
+    if command == "course start":
+        break
+    elif command[0] == "Add":
         list_with_exercise.append(command[1])
     elif command[0] == "Insert":
         list_with_exercise.insert(command[2], command[1])
