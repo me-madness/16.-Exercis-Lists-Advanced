@@ -23,4 +23,10 @@ while True:
         pass    
 
 lesson_index = (exercise for exercise in range(list_with_exercise))    
-print(f"{lesson_index}.{list_with_exercise}")    
+print(f"{lesson_index}.{list_with_exercise}")  
+
+# Data Types, Objects,Lists
+# Add:Databases
+# Insert:Arrays:0
+# Remove:Lists
+# course star
