@@ -9,15 +9,17 @@ list_with_exercise = input().split(", ")
 while True:
     commands = input().split(":")
     command = commands[0]
-    index_one = commands[1]
     if command == "course start":
         break
     elif command == "Add":
-        list_with_exercise.append(index_one)
+        index = commands[1]
+        list_with_exercise.append(index)
     elif command == "Insert":
+        index_one = commands[1]
         index_two = commands[2]
         list_with_exercise.insert(int(index_two), index_one)
     elif command == "Remove":
+        index = commands[1]
         list_with_exercise.remove(index_one)
     elif command == "Swap":
         pass
