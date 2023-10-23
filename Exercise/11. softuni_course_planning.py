@@ -7,8 +7,6 @@
 list_with_exercise = input().split(", ")
 
 while True:
-
-
     commands = input().split(":")
     command = commands[0]
     index_one = commands[1]
@@ -18,7 +16,7 @@ while True:
         list_with_exercise.append(index_one)
     elif command == "Insert":
         index_two = commands[2]
-        list_with_exercise.insert(index_two, index_one)
+        list_with_exercise.insert(int(index_two), index_one)
     elif command == "Remove":
         list_with_exercise.remove(index_one)
     elif command == "Swap":
