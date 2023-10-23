@@ -21,5 +21,6 @@ while True:
         pass
     elif command == "Exercise":
         pass    
-    
-print(f"{list_with_exercise}.{list_with_exercise}")    
+
+lesson_index = (exercise for exercise in range(list_with_exercise))    
+print(f"{lesson_index}.{list_with_exercise}")    
