@@ -7,16 +7,20 @@
 list_with_exercise = input().split(", ")
 
 while True:
+
+
     commands = input().split(":")
     command = commands[0]
+    index_one = commands[1]
     if command == "course start":
         break
     elif command == "Add":
-        list_with_exercise.append(command[1])
+        list_with_exercise.append(index_one)
     elif command == "Insert":
-        list_with_exercise.insert(command[2], command[1])
+        index_two = commands[2]
+        list_with_exercise.insert(index_two, index_one)
     elif command == "Remove":
-        list_with_exercise.remove(command[1])
+        list_with_exercise.remove(index_one)
     elif command == "Swap":
         pass
     elif command == "Exercise":
@@ -25,7 +29,7 @@ while True:
 lesson_index = (exercise for exercise in range(list_with_exercise))    
 print(f"{lesson_index}.{list_with_exercise}")  
 
-# Data Types, Objects,Lists
+# Data Types, Objects, Lists
 # Add:Databases
 # Insert:Arrays:0
 # Remove:Lists
