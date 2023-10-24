@@ -28,8 +28,8 @@ while True:
         pass    
 
 
-lesson_index = (exercise for exercise in len(list_with_exercise))    
-print(f"{lesson_index}.{list_with_exercise}")  
+# lesson_index = (exercise for exercise in len(list_with_exercise))    
+print(f"{''.join(list_with_exercise)}")  
 
 # Data Types, Objects, Lists
 # Add:Databases
