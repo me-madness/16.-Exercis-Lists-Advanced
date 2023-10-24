@@ -18,7 +18,8 @@ while True:
     elif command == "Insert":
         index_one = commands[1]
         index_two = commands[2]
-        list_with_exercise.insert(int(index_two), index_one)
+        if index_one not in list_with_exercise:
+            list_with_exercise.insert(int(index_two), index_one)
     elif command == "Remove":
         index = commands[1]
         list_with_exercise.remove(index_one)
