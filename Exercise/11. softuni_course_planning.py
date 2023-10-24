@@ -31,7 +31,7 @@ while True:
 # lesson_index = (exercise for exercise in len(list_with_exercise)) 
 for exercise in list_with_exercise:
     lesson_index += 1   
-print(f"{lesson_index}.{exercise}")  
+    print(f"{lesson_index}.{exercise}")  
 
 # Data Types, Objects, Lists
 # Add:Databases
