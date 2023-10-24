@@ -28,7 +28,12 @@ while True:
         a, b = list_with_exercise.index(index_one), list_with_exercise.index(index_two)
         list_with_exercise[b], list_with_exercise[a] = list_with_exercise[a], list_with_exercise[b]
     elif command == "Exercise":
-        pass    
+        index_one = command[1]
+        for exercise in list_with_exercise:
+            if exercise == index_one:
+                exercise = (exercise + "-" + "Exercise")
+            else:
+                list_with_exercise.append(index_one + "-" + "Exercise")        
 
 
 for exercise in list_with_exercise:
@@ -44,8 +49,14 @@ for exercise in list_with_exercise:
 # if the lesson exists and there is no exercise already, in the following format 
 # "{lessonTitle}-Exercise". If the lesson doesn't exist, add the lesson at the end of 
 # the course schedule, followed by the Exercise.
+
+## First input
+
 # Data Types, Objects, Lists
 # Add:Databases
 # Insert:Arrays:0
 # Remove:Lists
 # course start
+
+## Second input
+
