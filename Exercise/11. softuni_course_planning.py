@@ -40,18 +40,7 @@ for exercise in list_with_exercise:
     lesson_index += 1   
     print(f"{lesson_index}.{exercise}")  
 
-
-# "Swap:{lessonTitle}:{lessonTitle}" - swap the position of the two lessons if they exist.
-# a, b = i.index('password2'), i.index('password1')
-# i[b], i[a] = i[a], i[b]
-
-# "Exercise:{lessonTitle}" - add Exercise in the schedule right after the lesson index, 
-# if the lesson exists and there is no exercise already, in the following format 
-# "{lessonTitle}-Exercise". If the lesson doesn't exist, add the lesson at the end of 
-# the course schedule, followed by the Exercise.
-
 ## First input
-
 # Data Types, Objects, Lists
 # Add:Databases
 # Insert:Arrays:0
@@ -59,4 +48,9 @@ for exercise in list_with_exercise:
 # course start
 
 ## Second input
-
+# Arrays, Lists, Methods
+# Swap:Arrays:Methods
+# Exercise:Databases
+# Swap:Lists:Databases
+# Insert:Arrays:0
+# course start
