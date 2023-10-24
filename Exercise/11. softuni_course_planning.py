@@ -5,7 +5,7 @@
 # Second way from me 
 
 list_with_exercise = input().split(", ")
-
+lesson_index = 0
 while True:
 
     commands = input().split(":")
@@ -28,8 +28,10 @@ while True:
         pass    
 
 
-# lesson_index = (exercise for exercise in len(list_with_exercise))    
-print(f"{'\n'.join(list_with_exercise)}")  
+# lesson_index = (exercise for exercise in len(list_with_exercise)) 
+for exercise in list_with_exercise:
+    lesson_index += 1   
+print(f"{lesson_index}.{exercise}")  
 
 # Data Types, Objects, Lists
 # Add:Databases
