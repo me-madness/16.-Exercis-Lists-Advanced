@@ -25,16 +25,18 @@ while True:
     elif command == "Swap":
         index_one = commands[1]
         index_two = commands[2]
+        if index_one not in list_with_exercise:
+            list_with_exercise.append(index_one)
+        if index_two not in list_with_exercise:
+            list_with_exercise.append(index_two)    
         a, b = list_with_exercise.index(index_one), list_with_exercise.index(index_two)
         list_with_exercise[b], list_with_exercise[a] = list_with_exercise[a], list_with_exercise[b]
     elif command == "Exercise":
-        index_one = command[1]
-        for exercise in list_with_exercise:
-            if exercise == index_one:
-                exercise = (exercise + "-" + "Exercise")
-            else:
-                list_with_exercise.append(index_one + "-" + "Exercise")        
-
+        new_value = commands[1]
+        if new_value in list_with_exercise:
+            a = list_with_exercise.index(new_value + "-" + "Exercise")
+        else:
+            list_with_exercise.append(new_value + "-" + "Exercise")    
 
 for exercise in list_with_exercise:
     lesson_index += 1   
